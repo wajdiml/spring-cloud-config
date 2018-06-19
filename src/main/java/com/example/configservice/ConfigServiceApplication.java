@@ -9,13 +9,12 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableConfigServer
 @SpringBootApplication
 public class ConfigServiceApplication extends SpringBootServletInitializer {
-
-	@Override
+    @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(ConfigServiceApplication.class);
     }
-	
-	public static void main(String[] args) {
-		SpringApplication.run(ConfigServiceApplication.class, args);
-	}
+
+    public static void main(String[] args) {
+        SpringApplication.run(ConfigServiceApplication.class, args);
+    }
 }
