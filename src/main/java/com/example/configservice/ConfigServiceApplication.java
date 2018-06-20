@@ -12,6 +12,8 @@ public class ConfigServiceApplication extends SpringBootServletInitializer {
     private int x;
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        String str = null;
+        str = str.toUpperCase();
         return application.sources(ConfigServiceApplication.class);
     }
 
